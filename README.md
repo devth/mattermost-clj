@@ -16,7 +16,6 @@ the [openapi-generator](https://github.com/OpenAPITools/openapi-generator) tool.
 ```clojure
 (require '[mattermost-clj.core :as mattermost])
 
-;; set a token. Note the required "Token token=" prefix.
 (def my-token "xxxyyyzzz")
 
 (def host "my-mattermost-instance.herokuapp.com")
