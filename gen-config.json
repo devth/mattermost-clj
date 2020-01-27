@@ -1,6 +1,7 @@
 {
   "projectUrl": "https://github.com/devth/mattermost-clj",
   "projectName": "mattermost-clj",
+  "projectVersion": "4.0.1-SNAPSHOT",
   "projectLicenseName": "EPL 1.0",
   "projectLicenseUrl": "https://opensource.org/licenses/EPL-1.0"
 }

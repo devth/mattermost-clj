@@ -104,6 +104,17 @@ Manually patched openapi.yaml to fix these. Follow along on [the GitHub
 issue](https://github.com/mattermost/mattermost-api-reference/issues/468) which
 recommends fixes.
 
+- Manually patched to include auth in calls via:
+
+  ```
+  :auth-names    ["api_key"]
+  ```
+
+  Note: only `teams`, `bots`, and `posts` namespaces have been patched
+
+**We can't regenerate the client at this point since so many manual patches
+needed to be applied.**
+
 ### Install client locally
 
 ```bash

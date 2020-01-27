@@ -19,7 +19,7 @@ __Minimum server version__: 4.10
              :form-params   {}
              :content-types []
              :accepts       ["application/json"]
-             :auth-names    []}))
+             :auth-names    ["api_key"]}))
 
 (defn channels-channel-id-convert-post
   "Convert a channel from public to private
@@ -48,7 +48,7 @@ or have `manage_system` permission."
              :form-params   {}
              :content-types []
              :accepts       ["application/json"]
-             :auth-names    []}))
+             :auth-names    ["api_key"]}))
 
 (defn channels-channel-id-delete
   "Delete a channel
@@ -74,7 +74,7 @@ or have `manage_system` permission."
              :form-params   {}
              :content-types []
              :accepts       ["application/json"]
-             :auth-names    []}))
+             :auth-names    ["api_key"]}))
 
 (defn channels-channel-id-get
   "Get a channel
@@ -99,7 +99,7 @@ or have `manage_system` permission."
               :form-params   {}
               :content-types []
               :accepts       ["application/json"]
-              :auth-names    []})))
+              :auth-names    ["api_key"]})))
 
 (defn channels-channel-id-members-get
   "Get channel members
@@ -125,7 +125,7 @@ Must have the `read_channel` permission."
              :body-param    string
              :content-types ["application/json"]
              :accepts       ["application/json"]
-             :auth-names    []}))
+             :auth-names    ["api_key"]}))
 
 (defn channels-channel-id-members-ids-post
   "Get channel members by ids
@@ -155,7 +155,7 @@ __Minimum server version__: 5.14"
               :form-params   {}
               :content-types []
               :accepts       ["application/json"]
-              :auth-names    []})))
+              :auth-names    ["api_key"]})))
 
 (defn channels-channel-id-members-minus-group-members-get
   "Channel members minus group members.
@@ -185,7 +185,7 @@ __Minimum server version__: 5.14"
               :body-param    inline-object-37
               :content-types ["application/json"]
               :accepts       ["application/json"]
-              :auth-names    []})))
+              :auth-names    ["api_key"]})))
 
 (defn channels-channel-id-members-post
   "Add user to channel
@@ -211,7 +211,7 @@ In server version 5.3 and later, channel members can only be deleted from public
              :form-params   {}
              :content-types []
              :accepts       ["application/json"]
-             :auth-names    []}))
+             :auth-names    ["api_key"]}))
 
 (defn channels-channel-id-members-user-id-delete
   "Remove user from channel
@@ -238,7 +238,7 @@ In server version 5.3 and later, channel members can only be deleted from public
              :form-params   {}
              :content-types []
              :accepts       ["application/json"]
-             :auth-names    []}))
+             :auth-names    ["api_key"]}))
 
 (defn channels-channel-id-members-user-id-get
   "Get channel member
@@ -263,7 +263,7 @@ Must be logged in as the user or have `edit_other_users` permission."
              :body-param    channel-notify-props
              :content-types ["application/json"]
              :accepts       ["application/json"]
-             :auth-names    []}))
+             :auth-names    ["api_key"]}))
 
 (defn channels-channel-id-members-user-id-notify-props-put
   "Update channel notifications
@@ -289,7 +289,7 @@ Must have `manage_channel_roles` permission for the channel."
               :body-param    inline-object-38
               :content-types ["application/json"]
               :accepts       ["application/json"]
-              :auth-names    []})))
+              :auth-names    ["api_key"]})))
 
 (defn channels-channel-id-members-user-id-roles-put
   "Update channel roles
@@ -317,7 +317,7 @@ Must be authenticated and have the `manage_channel_roles` permission."
               :body-param    inline-object-39
               :content-types ["application/json"]
               :accepts       ["application/json"]
-              :auth-names    []})))
+              :auth-names    ["api_key"]})))
 
 (defn channels-channel-id-members-user-id-scheme-roles-put
   "Update the scheme-derived roles of a channel member.
@@ -345,7 +345,7 @@ If updating a public channel, `manage_public_channel_members` permission is requ
               :body-param    inline-object-35
               :content-types ["application/json"]
               :accepts       ["application/json"]
-              :auth-names    []})))
+              :auth-names    ["api_key"]})))
 
 (defn channels-channel-id-patch-put
   "Patch a channel
@@ -368,7 +368,7 @@ If updating a public channel, `manage_public_channel_members` permission is requ
              :form-params   {}
              :content-types []
              :accepts       ["application/json"]
-             :auth-names    []}))
+             :auth-names    ["api_key"]}))
 
 (defn channels-channel-id-pinned-get
   "Get a channel's pinned posts
@@ -392,7 +392,7 @@ If updating a public channel, `manage_public_channel_members` permission is requ
               :body-param    inline-object-34
               :content-types ["application/json"]
               :accepts       ["application/json"]
-              :auth-names    []})))
+              :auth-names    ["api_key"]})))
 
 (defn channels-channel-id-put
   "Update a channel
@@ -420,7 +420,7 @@ __Minimum server version__: 3.10
              :form-params   {}
              :content-types []
              :accepts       ["application/json"]
-             :auth-names    []}))
+             :auth-names    ["api_key"]}))
 
 (defn channels-channel-id-restore-post
   "Restore a channel
@@ -452,7 +452,7 @@ __Minimum server version__: 4.10"
               :body-param    inline-object-41
               :content-types ["application/json"]
               :accepts       ["application/json"]
-              :auth-names    []})))
+              :auth-names    ["api_key"]})))
 
 (defn channels-channel-id-scheme-put
   "Set a channel's scheme
@@ -480,7 +480,7 @@ Must have the `read_channel` permission."
              :form-params   {}
              :content-types []
              :accepts       ["application/json"]
-             :auth-names    []}))
+             :auth-names    ["api_key"]}))
 
 (defn channels-channel-id-stats-get
   "Get channel statistics
@@ -507,7 +507,7 @@ Must have the `read_channel` permission."
              :form-params   {}
              :content-types []
              :accepts       ["application/json"]
-             :auth-names    []}))
+             :auth-names    ["api_key"]}))
 
 (defn channels-channel-id-timezones-get
   "Get timezones in a channel
@@ -535,7 +535,7 @@ Must be one of the two users and have `create_direct_channel` permission. Having
              :body-param    string
              :content-types ["application/json"]
              :accepts       ["application/json"]
-             :auth-names    []}))
+             :auth-names    ["api_key"]}))
 
 (defn channels-direct-post
   "Create a direct message channel
@@ -560,7 +560,7 @@ Must have `create_group_channel` permission."
              :body-param    string
              :content-types ["application/json"]
              :accepts       ["application/json"]
-             :auth-names    []}))
+             :auth-names    ["api_key"]}))
 
 (defn channels-group-post
   "Create a group message channel
@@ -588,7 +588,7 @@ __Response only includes `last_viewed_at_times` in Mattermost server 4.3 and new
               :body-param    inline-object-40
               :content-types ["application/json"]
               :accepts       ["application/json"]
-              :auth-names    []})))
+              :auth-names    ["api_key"]})))
 
 (defn channels-members-user-id-view-post
   "View channel
@@ -616,7 +616,7 @@ If creating a public channel, `create_public_channel` permission is required. If
               :body-param    inline-object-32
               :content-types ["application/json"]
               :accepts       ["application/json"]
-              :auth-names    []})))
+              :auth-names    ["api_key"]})))
 
 (defn channels-post
   "Create a channel
@@ -642,7 +642,7 @@ __Minimum server version__: 5.14"
               :body-param    inline-object-33
               :content-types ["application/json"]
               :accepts       ["application/json"]
-              :auth-names    []})))
+              :auth-names    ["api_key"]})))
 
 (defn group-search-post
   "Search Group Channels
@@ -668,7 +668,7 @@ __Minimum server version__: 5.14"
               :form-params   {}
               :content-types []
               :accepts       ["application/json"]
-              :auth-names    []})))
+              :auth-names    ["api_key"]})))
 
 (defn teams-name-team-name-channels-name-channel-name-get
   "Get a channel by name and team name
@@ -696,7 +696,7 @@ Must have the `list_team_channels` permission."
              :form-params   {}
              :content-types []
              :accepts       ["application/json"]
-             :auth-names    []}))
+             :auth-names    ["api_key"]}))
 
 (defn teams-team-id-channels-autocomplete-get
   "Autocomplete channels
@@ -727,7 +727,7 @@ Must be authenticated and have the `manage_team` permission."
               :form-params   {}
               :content-types []
               :accepts       ["application/json"]
-              :auth-names    []})))
+              :auth-names    ["api_key"]})))
 
 (defn teams-team-id-channels-deleted-get
   "Get deleted channels
@@ -756,7 +756,7 @@ Must be authenticated and have the `list_team_channels` permission."
               :form-params   {}
               :content-types []
               :accepts       ["application/json"]
-              :auth-names    []})))
+              :auth-names    ["api_key"]})))
 
 (defn teams-team-id-channels-get
   "Get public channels
@@ -782,7 +782,7 @@ Must be authenticated and have the `list_team_channels` permission."
              :body-param    string
              :content-types ["application/json"]
              :accepts       ["application/json"]
-             :auth-names    []}))
+             :auth-names    ["api_key"]}))
 
 (defn teams-team-id-channels-ids-post
   "Get a list of channels by ids
@@ -807,7 +807,7 @@ Must be authenticated and have the `list_team_channels` permission."
               :form-params   {}
               :content-types []
               :accepts       ["application/json"]
-              :auth-names    []})))
+              :auth-names    ["api_key"]})))
 
 (defn teams-team-id-channels-name-channel-name-get
   "Get a channel by name
@@ -835,7 +835,7 @@ Must have the `list_team_channels` permission."
              :form-params   {}
              :content-types []
              :accepts       ["application/json"]
-             :auth-names    []}))
+             :auth-names    ["api_key"]}))
 
 (defn teams-team-id-channels-search-autocomplete-get
   "Autocomplete channels for search
@@ -866,7 +866,7 @@ In server version 5.16 and later, a user without the `list_team_channels` permis
               :body-param    inline-object-36
               :content-types ["application/json"]
               :accepts       ["application/json"]
-              :auth-names    []})))
+              :auth-names    ["api_key"]})))
 
 (defn teams-team-id-channels-search-post
   "Search channels
@@ -893,7 +893,7 @@ Must be logged in as user and have the `read_channel` permission, or have `edit_
              :form-params   {}
              :content-types []
              :accepts       ["application/json"]
-             :auth-names    []}))
+             :auth-names    ["api_key"]}))
 
 (defn users-user-id-channels-channel-id-unread-get
   "Get unread messages
@@ -917,7 +917,7 @@ Logged in as the user, or have `edit_other_users` permission, and `view_team` pe
              :form-params   {}
              :content-types []
              :accepts       ["application/json"]
-             :auth-names    []}))
+             :auth-names    ["api_key"]}))
 
 (defn users-user-id-teams-team-id-channels-get
   "Get channels for user
@@ -941,7 +941,7 @@ Logged in as the user and `view_team` permission for the team. Having `manage_sy
              :form-params   {}
              :content-types []
              :accepts       ["application/json"]
-             :auth-names    []}))
+             :auth-names    ["api_key"]}))
 
 (defn users-user-id-teams-team-id-channels-members-get
   "Get channel members for user

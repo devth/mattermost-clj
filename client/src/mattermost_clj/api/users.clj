@@ -17,7 +17,7 @@ Requires an active session and `view_team` and `read_channel` on any teams or ch
               :form-params   {}
               :content-types []
               :accepts       ["application/json"]
-              :auth-names    []})))
+              :auth-names    ["api_key"]})))
 
 (defn users-autocomplete-get
   "Autocomplete users
@@ -42,7 +42,7 @@ Requires an active session and for the current session to be able to view anothe
              :form-params   {}
              :content-types []
              :accepts       ["application/json"]
-             :auth-names    []}))
+             :auth-names    ["api_key"]}))
 
 (defn users-email-email-get
   "Get a user by email
@@ -67,7 +67,7 @@ No permissions required."
               :body-param    inline-object-13
               :content-types ["application/json"]
               :accepts       ["application/json"]
-              :auth-names    []})))
+              :auth-names    ["api_key"]})))
 
 (defn users-email-verify-post
   "Verify user email
@@ -93,7 +93,7 @@ No permissions required."
               :body-param    inline-object-14
               :content-types ["application/json"]
               :accepts       ["application/json"]
-              :auth-names    []})))
+              :auth-names    ["api_key"]})))
 
 (defn users-email-verify-send-post
   "Send verification email
@@ -120,7 +120,7 @@ Requires an active session and (if specified) membership to the channel or team 
               :form-params   {}
               :content-types []
               :accepts       ["application/json"]
-              :auth-names    []})))
+              :auth-names    ["api_key"]})))
 
 (defn users-get
   "Get users
@@ -155,7 +155,7 @@ __Minimum server version__: 5.14"
              :body-param    string
              :content-types ["application/json"]
              :accepts       ["application/json"]
-             :auth-names    []}))
+             :auth-names    ["api_key"]}))
 
 (defn users-group-channels-post
   "Get users by group channels ids
@@ -188,7 +188,7 @@ Requires an active session but no other permissions."
               :body-param    string
               :content-types ["application/json"]
               :accepts       ["application/json"]
-              :auth-names    []})))
+              :auth-names    ["api_key"]})))
 
 (defn users-ids-post
   "Get users by ids
@@ -225,7 +225,7 @@ No current authentication required except when switching from OAuth2/SAML to ema
               :body-param    inline-object-15
               :content-types ["application/json"]
               :accepts       ["application/json"]
-              :auth-names    []})))
+              :auth-names    ["api_key"]})))
 
 (defn users-login-switch-post
   "Switch login method
@@ -262,7 +262,7 @@ No permission required."
               :body-param    inline-object-8
               :content-types ["application/json"]
               :accepts       ["application/json"]
-              :auth-names    []})))
+              :auth-names    ["api_key"]})))
 
 (defn users-mfa-post
   "Check MFA
@@ -288,7 +288,7 @@ No permissions required."
               :body-param    inline-object-6
               :content-types ["application/json"]
               :accepts       ["application/json"]
-              :auth-names    []})))
+              :auth-names    ["api_key"]})))
 
 (defn users-password-reset-post
   "Reset password
@@ -314,7 +314,7 @@ No permissions required."
               :body-param    inline-object-10
               :content-types ["application/json"]
               :accepts       ["application/json"]
-              :auth-names    []})))
+              :auth-names    ["api_key"]})))
 
 (defn users-password-reset-send-post
   "Send password reset email
@@ -340,7 +340,7 @@ No permission required but user creation can be controlled by server configurati
               :body-param    inline-object
               :content-types ["application/json"]
               :accepts       ["application/json"]
-              :auth-names    []})))
+              :auth-names    ["api_key"]})))
 
 (defn users-post
   "Create a user
@@ -366,7 +366,7 @@ Requires an active session and `read_channel` and/or `view_team` permissions for
               :body-param    inline-object-1
               :content-types ["application/json"]
               :accepts       ["application/json"]
-              :auth-names    []})))
+              :auth-names    ["api_key"]})))
 
 (defn users-search-post
   "Search users
@@ -392,7 +392,7 @@ Must be authenticated."
               :body-param    inline-object-12
               :content-types ["application/json"]
               :accepts       ["application/json"]
-              :auth-names    []})))
+              :auth-names    ["api_key"]})))
 
 (defn users-sessions-device-put
   "Attach mobile device
@@ -421,7 +421,7 @@ Must have `manage_system` permission."
              :form-params   {}
              :content-types []
              :accepts       ["application/json"]
-             :auth-names    []}))
+             :auth-names    ["api_key"]}))
 
 (defn users-sessions-revoke-all-post
   "Revoke all sessions from all users.
@@ -449,7 +449,7 @@ Must be authenticated."
              :form-params   {}
              :content-types []
              :accepts       ["application/json"]
-             :auth-names    []}))
+             :auth-names    ["api_key"]}))
 
 (defn users-stats-get
   "Get total count of users in the system
@@ -477,7 +477,7 @@ Must have `revoke_user_access_token` permission. For non-self requests, must als
               :body-param    inline-object-18
               :content-types ["application/json"]
               :accepts       ["application/json"]
-              :auth-names    []})))
+              :auth-names    ["api_key"]})))
 
 (defn users-tokens-disable-post
   "Disable personal access token
@@ -509,7 +509,7 @@ Must have `create_user_access_token` permission. For non-self requests, must als
               :body-param    inline-object-19
               :content-types ["application/json"]
               :accepts       ["application/json"]
-              :auth-names    []})))
+              :auth-names    ["api_key"]})))
 
 (defn users-tokens-enable-post
   "Enable personal access token
@@ -540,7 +540,7 @@ Must have `manage_system` permission."
               :form-params   {}
               :content-types []
               :accepts       ["application/json"]
-              :auth-names    []})))
+              :auth-names    ["api_key"]})))
 
 (defn users-tokens-get
   "Get user access tokens
@@ -572,7 +572,7 @@ Must have `revoke_user_access_token` permission. For non-self requests, must als
               :body-param    inline-object-17
               :content-types ["application/json"]
               :accepts       ["application/json"]
-              :auth-names    []})))
+              :auth-names    ["api_key"]})))
 
 (defn users-tokens-revoke-post
   "Revoke a user access token
@@ -604,7 +604,7 @@ Must have `manage_system` permission."
               :body-param    inline-object-20
               :content-types ["application/json"]
               :accepts       ["application/json"]
-              :auth-names    []})))
+              :auth-names    ["api_key"]})))
 
 (defn users-tokens-search-post
   "Search tokens
@@ -635,7 +635,7 @@ Must have `read_user_access_token` permission. For non-self requests, must also 
              :form-params   {}
              :content-types []
              :accepts       ["application/json"]
-             :auth-names    []}))
+             :auth-names    ["api_key"]}))
 
 (defn users-tokens-token-id-get
   "Get a user access token
@@ -667,7 +667,7 @@ User with `manage_system` permission can activate or deactivate a user."
               :body-param    inline-object-5
               :content-types ["application/json"]
               :accepts       ["application/json"]
-              :auth-names    []})))
+              :auth-names    ["api_key"]})))
 
 (defn users-user-id-active-put
   "Update user active status
@@ -695,7 +695,7 @@ Must be logged in as the user or have the `edit_other_users` permission."
              :form-params   {}
              :content-types []
              :accepts       ["application/json"]
-             :auth-names    []}))
+             :auth-names    ["api_key"]}))
 
 (defn users-user-id-audits-get
   "Get user's audits
@@ -722,7 +722,7 @@ Must have the `edit_other_users` permission."
              :body-param    user-auth-data
              :content-types ["application/json"]
              :accepts       ["application/json"]
-             :auth-names    []}))
+             :auth-names    ["api_key"]}))
 
 (defn users-user-id-auth-put
   "Update a user's authentication method
@@ -748,7 +748,7 @@ Must be logged in as the user being deactivated or have the `edit_other_users` p
              :form-params   {}
              :content-types []
              :accepts       ["application/json"]
-             :auth-names    []}))
+             :auth-names    ["api_key"]}))
 
 (defn users-user-id-delete
   "Deactivate a user account.
@@ -777,7 +777,7 @@ Must be logged in as the user or have the `demote_to_guest` permission."
              :form-params   {}
              :content-types []
              :accepts       ["application/json"]
-             :auth-names    []}))
+             :auth-names    ["api_key"]}))
 
 (defn users-user-id-demote-post
   "Demote a user to a guest
@@ -806,7 +806,7 @@ Requires an active session but no other permissions."
              :form-params   {}
              :content-types []
              :accepts       ["application/json"]
-             :auth-names    []}))
+             :auth-names    ["api_key"]}))
 
 (defn users-user-id-get
   "Get a user
@@ -831,7 +831,7 @@ __Minimum server version__: 5.5"
              :form-params   {}
              :content-types []
              :accepts       ["application/json"]
-             :auth-names    []}))
+             :auth-names    ["api_key"]}))
 
 (defn users-user-id-image-default-get
   "Return user's default (generated) profile image
@@ -857,7 +857,7 @@ __Minimum server version__: 5.5"
              :form-params   {}
              :content-types []
              :accepts       ["application/json"]
-             :auth-names    []}))
+             :auth-names    ["api_key"]}))
 
 (defn users-user-id-image-delete
   "Delete user's profile image
@@ -882,7 +882,7 @@ Must be logged in."
              :form-params   {}
              :content-types []
              :accepts       ["application/json"]
-             :auth-names    []}))
+             :auth-names    ["api_key"]}))
 
 (defn users-user-id-image-get
   "Get user's profile image
@@ -906,7 +906,7 @@ Must be logged in as the user being updated or have the `edit_other_users` permi
              :form-params   {"image" image }
              :content-types ["multipart/form-data"]
              :accepts       ["application/json"]
-             :auth-names    []}))
+             :auth-names    ["api_key"]}))
 
 (defn users-user-id-image-post
   "Set user's profile image
@@ -930,7 +930,7 @@ Must be logged in as the user or have the `edit_other_users` permission."
              :form-params   {}
              :content-types []
              :accepts       ["application/json"]
-             :auth-names    []}))
+             :auth-names    ["api_key"]}))
 
 (defn users-user-id-mfa-generate-post
   "Generate MFA secret
@@ -956,7 +956,7 @@ Must be logged in as the user being updated or have the `edit_other_users` permi
               :body-param    inline-object-7
               :content-types ["application/json"]
               :accepts       ["application/json"]
-              :auth-names    []})))
+              :auth-names    ["api_key"]})))
 
 (defn users-user-id-mfa-put
   "Update a user's MFA
@@ -983,7 +983,7 @@ Must be logged in as the user the password is being changed for or have `manage_
               :body-param    inline-object-9
               :content-types ["application/json"]
               :accepts       ["application/json"]
-              :auth-names    []})))
+              :auth-names    ["api_key"]})))
 
 (defn users-user-id-password-put
   "Update a user's password
@@ -1010,7 +1010,7 @@ Must be logged in as the user being updated or have the `edit_other_users` permi
               :body-param    inline-object-3
               :content-types ["application/json"]
               :accepts       ["application/json"]
-              :auth-names    []})))
+              :auth-names    ["api_key"]})))
 
 (defn users-user-id-patch-put
   "Patch a user
@@ -1040,7 +1040,7 @@ Must be logged in as the user or have the `promote_guest` permission."
              :form-params   {}
              :content-types []
              :accepts       ["application/json"]
-             :auth-names    []}))
+             :auth-names    ["api_key"]}))
 
 (defn users-user-id-promote-post
   "Promote a guest to user
@@ -1071,7 +1071,7 @@ Must be logged in as the user being updated or have the `edit_other_users` permi
               :body-param    inline-object-2
               :content-types ["application/json"]
               :accepts       ["application/json"]
-              :auth-names    []})))
+              :auth-names    ["api_key"]})))
 
 (defn users-user-id-put
   "Update a user
@@ -1098,7 +1098,7 @@ Must have the `manage_roles` permission."
               :body-param    inline-object-4
               :content-types ["application/json"]
               :accepts       ["application/json"]
-              :auth-names    []})))
+              :auth-names    ["api_key"]})))
 
 (defn users-user-id-roles-put
   "Update a user's roles
@@ -1123,7 +1123,7 @@ Must be logged in as the user being updated or have the `edit_other_users` permi
              :form-params   {}
              :content-types []
              :accepts       ["application/json"]
-             :auth-names    []}))
+             :auth-names    ["api_key"]}))
 
 (defn users-user-id-sessions-get
   "Get user's sessions
@@ -1148,7 +1148,7 @@ __Minimum server version__: 4.4"
              :form-params   {}
              :content-types []
              :accepts       ["application/json"]
-             :auth-names    []}))
+             :auth-names    ["api_key"]}))
 
 (defn users-user-id-sessions-revoke-all-post
   "Revoke all active sessions for a user
@@ -1175,7 +1175,7 @@ Must be logged in as the user being updated or have the `edit_other_users` permi
               :body-param    inline-object-11
               :content-types ["application/json"]
               :accepts       ["application/json"]
-              :auth-names    []})))
+              :auth-names    ["api_key"]})))
 
 (defn users-user-id-sessions-revoke-post
   "Revoke a user session
@@ -1203,7 +1203,7 @@ Must be logged in as the user being acted on."
              :form-params   {}
              :content-types []
              :accepts       ["application/json"]
-             :auth-names    []}))
+             :auth-names    ["api_key"]}))
 
 (defn users-user-id-terms-of-service-get
   "Fetches user's latest terms of service action if the latest action was for acceptance.
@@ -1235,7 +1235,7 @@ Must be logged in as the user being acted on."
               :body-param    inline-object-21
               :content-types ["application/json"]
               :accepts       ["application/json"]
-              :auth-names    []})))
+              :auth-names    ["api_key"]})))
 
 (defn users-user-id-terms-of-service-post
   "Records user action when they accept or decline custom terms of service
@@ -1267,7 +1267,7 @@ Must have `read_user_access_token` permission. For non-self requests, must also 
               :form-params   {}
               :content-types []
               :accepts       ["application/json"]
-              :auth-names    []})))
+              :auth-names    ["api_key"]})))
 
 (defn users-user-id-tokens-get
   "Get user access tokens
@@ -1300,7 +1300,7 @@ Must have `create_user_access_token` permission. For non-self requests, must als
               :body-param    inline-object-16
               :content-types ["application/json"]
               :accepts       ["application/json"]
-              :auth-names    []})))
+              :auth-names    ["api_key"]})))
 
 (defn users-user-id-tokens-post
   "Create a user access token
@@ -1328,7 +1328,7 @@ Requires an active session but no other permissions."
              :form-params   {}
              :content-types []
              :accepts       ["application/json"]
-             :auth-names    []}))
+             :auth-names    ["api_key"]}))
 
 (defn users-username-username-get
   "Get a user by username
@@ -1353,7 +1353,7 @@ Requires an active session but no other permissions."
              :body-param    string
              :content-types ["application/json"]
              :accepts       ["application/json"]
-             :auth-names    []}))
+             :auth-names    ["api_key"]}))
 
 (defn users-usernames-post
   "Get users by usernames

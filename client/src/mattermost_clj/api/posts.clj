@@ -17,7 +17,7 @@ Must have `read_channel` permission for the channel."
               :form-params   {}
               :content-types []
               :accepts       ["application/json"]
-              :auth-names    []})))
+              :auth-names    ["api_key"]})))
 
 (defn channels-channel-id-posts-get
   "Get posts for a channel
@@ -43,7 +43,7 @@ Must have `create_post_ephemeral` permission (currently only given to system adm
               :body-param    inline-object-43
               :content-types ["application/json"]
               :accepts       ["application/json"]
-              :auth-names    []})))
+              :auth-names    ["api_key"]})))
 
 (defn posts-ephemeral-post
   "Create a ephemeral post
@@ -69,7 +69,7 @@ Must have `create_post` permission for the channel the post is being created in.
               :body-param    inline-object-42
               :content-types ["application/json"]
               :accepts       ["application/json"]
-              :auth-names    []})))
+              :auth-names    ["api_key"]})))
 
 (defn posts-post
   "Create a post
@@ -94,7 +94,7 @@ Must be authenticated and have the `read_channel` permission to the channel the 
              :form-params   {}
              :content-types []
              :accepts       ["application/json"]
-             :auth-names    []}))
+             :auth-names    ["api_key"]}))
 
 (defn posts-post-id-actions-action-id-post
   "Perform a post action
@@ -118,7 +118,7 @@ Must be logged in as the user or have `delete_others_posts` permission."
              :form-params   {}
              :content-types []
              :accepts       ["application/json"]
-             :auth-names    []}))
+             :auth-names    ["api_key"]}))
 
 (defn posts-post-id-delete
   "Delete a post
@@ -142,7 +142,7 @@ Must have `read_channel` permission for the channel the post is in."
              :form-params   {}
              :content-types []
              :accepts       ["application/json"]
-             :auth-names    []}))
+             :auth-names    ["api_key"]}))
 
 (defn posts-post-id-files-info-get
   "Get file info for post
@@ -166,7 +166,7 @@ Must have `read_channel` permission for the channel the post is in or if the cha
              :form-params   {}
              :content-types []
              :accepts       ["application/json"]
-             :auth-names    []}))
+             :auth-names    ["api_key"]}))
 
 (defn posts-post-id-get
   "Get a post
@@ -192,7 +192,7 @@ Must have the `edit_post` permission."
               :body-param    inline-object-45
               :content-types ["application/json"]
               :accepts       ["application/json"]
-              :auth-names    []})))
+              :auth-names    ["api_key"]})))
 
 (defn posts-post-id-patch-put
   "Patch a post
@@ -217,7 +217,7 @@ Must be authenticated and have the `read_channel` permission to the channel the 
              :form-params   {}
              :content-types []
              :accepts       ["application/json"]
-             :auth-names    []}))
+             :auth-names    ["api_key"]}))
 
 (defn posts-post-id-pin-post
   "Pin a post to the channel
@@ -243,7 +243,7 @@ Must have `edit_post` permission for the channel the post is in."
               :body-param    inline-object-44
               :content-types ["application/json"]
               :accepts       ["application/json"]
-              :auth-names    []})))
+              :auth-names    ["api_key"]})))
 
 (defn posts-post-id-put
   "Update a post
@@ -268,7 +268,7 @@ Must have `read_channel` permission for the channel the post is in or if the cha
              :form-params   {}
              :content-types []
              :accepts       ["application/json"]
-             :auth-names    []}))
+             :auth-names    ["api_key"]}))
 
 (defn posts-post-id-thread-get
   "Get a thread
@@ -292,7 +292,7 @@ Must be authenticated and have the `read_channel` permission to the channel the 
              :form-params   {}
              :content-types []
              :accepts       ["application/json"]
-             :auth-names    []}))
+             :auth-names    ["api_key"]}))
 
 (defn posts-post-id-unpin-post
   "Unpin a post to the channel
@@ -318,7 +318,7 @@ Must be authenticated and have the `view_team` permission."
               :body-param    inline-object-46
               :content-types ["application/json"]
               :accepts       ["application/json"]
-              :auth-names    []})))
+              :auth-names    ["api_key"]})))
 
 (defn teams-team-id-posts-search-post
   "Search for team posts
@@ -346,7 +346,7 @@ __Minimum server version__: 5.18"
              :form-params   {}
              :content-types []
              :accepts       ["application/json"]
-             :auth-names    []}))
+             :auth-names    ["api_key"]}))
 
 (defn user-user-id-posts-post-id-set-unread-post
   "Mark as unread from a post.
@@ -375,7 +375,7 @@ __Minimum server version__: 5.14"
               :form-params   {}
               :content-types []
               :accepts       ["application/json"]
-              :auth-names    []})))
+              :auth-names    ["api_key"]})))
 
 (defn users-user-id-channels-channel-id-posts-unread-get
   "Get posts around last unread
@@ -402,7 +402,7 @@ Must be user or have `manage_system` permission."
               :form-params   {}
               :content-types []
               :accepts       ["application/json"]
-              :auth-names    []})))
+              :auth-names    ["api_key"]})))
 
 (defn users-user-id-posts-flagged-get
   "Get a list of flagged posts
