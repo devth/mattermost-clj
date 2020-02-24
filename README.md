@@ -110,10 +110,19 @@ recommends fixes.
   :auth-names    ["api_key"]
   ```
 
-  Note: only `teams`, `bots`, and `posts` namespaces have been patched
+  Note: these namespaces have been patched:
 
-**We can't regenerate the client at this point since so many manual patches
-needed to be applied.**
+  - `teams`
+  - `bots`
+  - `posts`
+  - `channels`
+  - `users`
+
+⚠ **We can't regenerate the client at this point since so many manual patches
+needed to be applied.** ⚠
+
+Reported in issue
+[#485](https://github.com/mattermost/mattermost-api-reference/issues/485).
 
 ### Install client locally
 
@@ -122,6 +131,8 @@ cd client && lein install; cd ..
 ```
 
 ### Deploy to Clojars
+
+Make sure to bump version in `clilent/project.clj` first.
 
 ```bash
 cd client && lein deploy; cd ..

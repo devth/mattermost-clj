@@ -1,4 +1,4 @@
-(defproject mattermost-clj "4.0.2"
+(defproject mattermost-clj "4.0.3"
   :description "There is also a work-in-progress [Postman API reference](https://documenter.getpostman.com/view/4508214/RW8FERUn)."
   :url "https://github.com/devth/mattermost-clj"
   :license {:name "EPL 1.0"

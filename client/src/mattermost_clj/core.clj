@@ -116,9 +116,6 @@
 (defn process-auth
   "Process the given auth name into options, which is merged into the given opts."
   [opts auth-name]
-  (println "process auth" auth-name
-           (pr-str auth-definitions)
-           (pr-str (get-in *api-context* [:auths auth-name])))
   (if-let [value (get-in *api-context* [:auths auth-name])]
     (merge-with merge
                 opts
